@@ -1,0 +1,23 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+margin: 0;
+box-sizing: border-box;
+background: linear-gradient(to right, #304352, #d7d2cc);
+}
+
+#InfoText{
+    font-size: large;
+    color: black;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+#Info{
+    border: 1px solid red;
+    margin-left: 30%;
+   margin-top: 100px;
+    width: 700px; 
+}
