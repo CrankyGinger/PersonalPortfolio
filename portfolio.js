@@ -1,7 +1,4 @@
-var app = document.getElementsByTagName("BODY")[0];
-if (localStorage.lightMode == "dark") {
-    app.setAttribute("light-mode", "dark");
-}
+
 
 function toggle_light_mode() {
     var app = document.getElementsByTagName("BODY")[0];
@@ -11,13 +8,16 @@ function toggle_light_mode() {
     } else {
         localStorage.lightMode = "dark";
         app.setAttribute("light-mode", "dark");
-    }       
+    } 
+    
 }
+
 
 window.addEventListener("storage", function () {
     if (localStorage.lightMode == "dark") {
         app.setAttribute("light-mode", "dark");
-    } else {
-        app.setAttribute("light-mode", "light");
+    }else {
+        app.setAttribute("light-mode", "light")
     }
-}, false);
+});
+

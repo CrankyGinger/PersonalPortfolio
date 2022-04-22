@@ -9,24 +9,73 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@300&family=Pacifico&family=Saira+Stencil+One&display=swap');
         </style>
+        <script src="https://kit.fontawesome.com/9ef4104da3.js" crossorigin="anonymous"></script>
     <title>Personal Portfolio</title>
 </head>
 <body>
-    <div id="Info">
+    <section id="Info">
         <h1>Lorem, ipsum dolor.</h1>
         <p id="InfoText"><b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, repellat? Fugit commodi nemo laborum ipsum?</b></p>
-    </div>
+    </section>
 
-</head>
+<!--
 
 
 
+
+-->
+
+
+
+    <ul id="Nav">
+        <div id="links"><i class="fa-solid fa-house-chimney"></i></div><!--Home Page-->
+        <div id="links"><i class="fa-solid fa-bicycle"></i></div><!--About Me-->
+        <div id="links"><i class="fa-brands fa-codepen"></i></div><!--Portfolio/Previous Work-->
+        <div id="links"><i class="fa-solid fa-folder-closed"></i></div><!--Resume-->
+        <div id="links"><i class="fa-solid fa-envelope"></i></div><!--Contact Page-->
+    </ul>
 
     <script>
         var app = document.getElementsByTagName("BODY")[0];
         if (localStorage.lightMode == "dark") {
             app.setAttribute("light-mode", "dark");
         }
+
+        var app = document.getElementsByTagName("DIV")[0];
+        if (localStorage.lightMode == "dark") {
+            app.setAttribute("light-mode", "dark");
+        }else{
+            app.setAttribute("light-mode","light")
+        }
+
+        var app = document.getElementsByTagName("DIV")[1];
+        if (localStorage.lightMode == "dark") {
+            app.setAttribute("light-mode", "dark");
+        }else{
+            app.setAttribute("light-mode","light")
+        }
+        var app = document.getElementsByTagName("DIV")[2];
+        if (localStorage.lightMode == "dark") {
+            app.setAttribute("light-mode", "dark");
+        }else{
+            app.setAttribute("light-mode","light")
+        }
+        var app = document.getElementsByTagName("DIV")[3];
+        if (localStorage.lightMode == "dark") {
+            app.setAttribute("light-mode", "dark");
+        }else{
+            app.setAttribute("light-mode","light")
+        }
+        var app = document.getElementsByTagName("DIV")[4];
+        if (localStorage.lightMode == "dark") {
+            app.setAttribute("light-mode", "dark");
+        }else{
+            app.setAttribute("light-mode","light")
+        }
+
+
+       
+
     </script>
 
     <div class="container">
@@ -36,7 +85,5 @@
 	    	<span></span>
 	    </button> 
 	</div>
-
-
 </body>
 </html>
