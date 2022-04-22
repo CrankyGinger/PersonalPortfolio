@@ -1,14 +1,90 @@
-body{
-    font-family: 'Montserrat', sans-serif;
-margin: 0;
-box-sizing: border-box;
-background: linear-gradient(to right, #304352, #d7d2cc);
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    width: 1px;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 2%;
+}
+    
+#span1{
+    margin-left: -5px;
+    width: 40px;
+    margin-right: 5px;
 }
 
-#InfoText{
-    font-size: large;
+.light-mode-button {
+    background:0;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    position: relative;
+    border: 1px solid rgba(255,255,255,0);
+}
+    
+    
+    
+.light-mode-button span:nth-child(1) {
+    position: absolute;
+    top:0;
+    left:5px;
+    width: 100px;
+    height:40px;
+    border-radius: 20px;
+    background-color: grey;
+    box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+    transition: 0.3s;
+}
+    
+.light-mode-button span:nth-child(2) {
+    position: absolute;
+    top:5px;
+    left:5px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+    transition: 1s;
+}
+
+body {
+    background-color: #f6f6f6;
     color: black;
+    transition: background-color   .7s;    
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body[light-mode=dark] {
+    background-color: #141516;
+    color: #ced4e2;
+    border: white;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(1){
+    background-color: #ced4e2;
+    color: #141516;
+}
+
+body[light-mode=dark] .light-mode-button span:nth-child(2) {
+    left: 5px;
+	background-color: #141516;
+}
+
+
+
+#InfoText{
+    font-size: larger;
     text-align: center;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 h1{
@@ -16,8 +92,10 @@ h1{
 }
 
 #Info{
-    border: 1px solid red;
-    margin-left: 30%;
-   margin-top: 100px;
-    width: 700px; 
+    border: 3px solid ;
+    margin-left: 35%;
+    margin-top: 100px;
+    height: 300px;
+    width: 500px; 
 }
+

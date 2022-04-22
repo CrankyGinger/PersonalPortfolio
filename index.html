@@ -13,8 +13,30 @@
 </head>
 <body>
     <div id="Info">
-        <h1>I'm Robert Flath, and this is my portfolio</h1>
-        <p id="InfoText">I am a student at the Center for Advanced Research and Technology. I am currently enrolled in the Web Application Development course, and am learning the coding languages of the web: HTML, CSS, and JavaScript.</p>
+        <h1>Lorem, ipsum dolor.</h1>
+        <p id="InfoText"><b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, repellat? Fugit commodi nemo laborum ipsum?</b></p>
     </div>
+
+</head>
+
+
+
+
+    <script>
+        var app = document.getElementsByTagName("BODY")[0];
+        if (localStorage.lightMode == "dark") {
+            app.setAttribute("light-mode", "dark");
+        }
+    </script>
+
+    <div class="container">
+	    <button 
+    		class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+	    	<span id="span1"></span>
+	    	<span></span>
+	    </button> 
+	</div>
+
+
 </body>
 </html>
