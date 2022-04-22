@@ -11,9 +11,9 @@
 }
     
 #span1{
-    margin-left: -5px;
-    width: 40px;
-    margin-right: 5px;
+    margin-left: -1px;
+    width: 35px;
+    height: 20px;
 }
 
 .light-mode-button {
@@ -43,10 +43,10 @@
     
 .light-mode-button span:nth-child(2) {
     position: absolute;
-    top:5px;
-    left:5px;
-    width: 30px;
-    height: 30px;
+    top: 2px;
+    left:15px;
+    width: 15px;
+    height: 15px;
     background-color: white;
     border-radius: 50%;
     box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
@@ -56,7 +56,7 @@
 body {
     background-color: #f6f6f6;
     color: black;
-    transition: background-color   .7s;    
+    transition: background-color .7s;    
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     box-sizing: border-box;
