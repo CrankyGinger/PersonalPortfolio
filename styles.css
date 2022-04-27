@@ -5,8 +5,8 @@ bottom: 20px;
     
 #span1{
     margin-left: -1px;
-    width: 35px;
-    height: 20px;
+    width: 30px;
+    height: 22px;
 }
 
 .light-mode-button {
@@ -36,7 +36,7 @@ bottom: 20px;
     
 .light-mode-button span:nth-child(2) {
     position: absolute;
-    top: 2px;
+    top: 3.5px;
     left:15px;
     width: 15px;
     height: 15px;
@@ -117,6 +117,7 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
   display: inline-flex;
   flex-wrap: wrap;
     margin-right:30px;
+    height: fit-content;
 
   }
 
