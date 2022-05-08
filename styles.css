@@ -1,4 +1,4 @@
-.container {
+.toggleContainer {
 position: fixed;
 bottom: 20px;
 }
@@ -53,6 +53,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     box-sizing: border-box;
+    height: 1000vh;
 }
 
 
@@ -74,26 +75,23 @@ body[light-mode=dark] .light-mode-button span:nth-child(2) {
 	background-color: #141516;
 }
 
-
-
-
-
-
 /* ^ Styling for Light/Dark mode toggle button */
 
 a{
     color: unset;
+    width: fit-content;
+    text-decoration: none;
 }
 
 .items-Nav {
-    display: inline-block;
+    display: flex;
     position: relative;
-    margin-left:75px;
+    align-content: space-between;
+    margin: 10px;
     text-decoration: none;
-
-  }
+}
   
-  .items-Nav:after {
+.items-Nav:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -104,15 +102,15 @@ a{
     background-color: #318CE7;
     transform-origin: bottom right;
     transition: transform 0.4s ease-out;
-  }
+}
   
-  .items-Nav:hover:after {
+.items-Nav:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
+}
   
   
-  #NavList{
+#NavList{
     text-align:right;
     margin-right:10px;
     cursor: pointer;
@@ -120,49 +118,163 @@ a{
     top: 2%;
     right: 2%;
 
-  }
+}
   
-  #Nav{
+#Nav{
     display: inline-flex;
     flex-wrap: wrap;
     margin-right:30px;
-    height: auto;
+}
 
-  }
+
+.dropdown {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+
+.dropdown li{
+    top: 1%;
+    position: relative;
+    width: fit-content;
+}
+
+.dropdown ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    list-style-type: none;
+    right: 0;
+}
+
+
+.dropdown li:hover > ul {
+display: block;
+}
+
+
+#dropdown-nav{
+    display: inline-block;
+    position: relative;
+}
+
+#dropdown-Nav:after {
+    content: '';
+    position: absolute;
+    width: 30%;
+    transform: scaleX(0);
+    height: 2px;
+    right: 1px;
+    background-color: #318CE7;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+}
+
+#dropdown-Nav:hover:after {
+    transform: scaleX(1);
+    transform-origin:  left;
+}
 
 /* ^ Styling for Navigation Bar */
 
 
-#homeIcon{
+.homeContainer {
+    display: table-cell;
+    text-align: left;
     position: absolute;
-    top: 0.5%;
-    left: .5%;
+    top: 0;
+}
+  
+#homeUl {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+#homeLogo {
+    padding: 0 14px;
+    font-size:xx-large;
+    
+}
+  
+#homeSpan {
+    position: relative;
+    display: block;
     cursor: pointer;
-    height: 25px;
-    width: 25px;
+}
+  
+#homeSpan:before, #homeSpan:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #fff;
+}
+  
+#homeSpan:before {
+    left: -2.5px;
+}
+#homeSpan:after {
+    right: 2.5px;
+    background: #fff;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+  
+#homeSpan:hover:before {
+    background: #fff;
+    width: 110%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+  
+#homeSpan:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
 }
 
-i{
-  font-size: xx-large;  
+    /* Styling for the Home button */
+
+footer{
+    position: absolute;
+    bottom: 3%;
+    margin-left: 40%;
 }
 
-#InfoText{
-    font-size: larger;
-    text-align: center;
-    margin-left: 3px;
-    margin-right: 3px;
+#footer-Nav{
+    text-decoration: none;
+    margin-left: 5px;
 }
 
-h1{
-    text-align: center;
+#footer-Nav:hover{
+    text-decoration: underline;
 }
 
-#Info{
-    border: 3px solid ;
+
+#introInfo{
     margin-left: 35%;
+    margin-top: 8%;
+    position: relative;
+    width: fit-content;
+}
 
-    margin-top: 100px;
-    height: 300px;
-    width: 500px; 
+#introText{
+    font-size: 250%;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+#quickInfo{
+    width: 50%;
+    margin-left: 26%;
+}
+
+#homeText{
+    font-size: xx-large;
+    text-align: center;
+    user-select: none;
 }
 

@@ -14,21 +14,34 @@
 </head>
 <body>
 
-    <div id="homeIcon">
-        <a href="index.html">
-            <i class="fa-solid fa-house"></i>
-        </a>    
-        </div>
-
-
-    <div id = "NavList">
-        <div id = "Nav">
-        <a href="About.html" class="items-Nav">About</a>
-        <a href="Portfolio.html" class="items-Nav">Portfolio</a>
-        <a href="Resume.html" class="items-Nav">Resume</a>
-        <a href="Contact.html" class="items-Nav">Contact</a>
-        </div>
+<a href="index.html">
+    <div class="homeContainer">
+        <ul id="homeUl">
+            <li id="homeLogo"><span id="homeSpan">RF</span></li>
+        </ul>
     </div>
+</a>
+
+
+<div id = "NavList">
+    <div id = "Nav">
+        <ul class="dropdown">
+                <a href="About.html" class="items-Nav">About</a>
+            <li><a href="Portfolio.html" class="items-Nav">Portfolio</a>
+                <ul>
+                    <a href="Chronoshift.html" id="dropdown-Nav">Chronoshift</a>
+                    <a href="" id="dropdown-Nav">Flexbox</a>
+                    <a href="" id="dropdown-Nav">Tourism</a>
+                    <a href="" id="dropdown-Nav">Story</a>
+                    <a href="" id="dropdown-Nav">Placeholder</a>
+                    <a href="" id="dropdown-Nav">Placeholder</a>
+                </ul>
+            </li>  
+                <a href="Resume.html" class="items-Nav">Resume</a>
+                <a href="Contact.html" class="items-Nav">Contact</a>
+        </ul>
+    </div>
+</div>
 
 
 
@@ -36,14 +49,25 @@
 
 
 
-    <div class="container">
-	    <button 
-    		class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
-	    	<span id="span1"></span>
-	    	<span></span>
-	    </button> 
-	</div>
+<div class="toggleContainer">
+	<button 
+    	class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+	    <span id="span1"></span>
+	    <span></span>
+	</button> 
+</div>
+
 </body>
+
+<footer>
+    <div id="links-Footer">
+        <a id="footer-Nav" href="https://www.github.com/CrankyGinger" onclick="linkClicked()" >Github</a>
+        <a id="footer-Nav" href="Portfolio.html">Portfolio</a>
+        <a id="footer-Nav" href="Resume.html">Resume</a>
+        <a id="footer-Nav" href="Contact.html">Contact</a>
+    </div>   
+</footer>
+
 <script>
     var app = document.getElementsByTagName("body")[0];
     if (localStorage.lightMode == "dark") {
