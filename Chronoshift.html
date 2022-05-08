@@ -13,15 +13,14 @@
     <title>Chronoshift Website</title>
 </head>
 <body>
-
-    <a href="index.html">
-        <div class="homeContainer">
-            <ul id="homeUl">
-              <li id="homeLogo"><span id="homeSpan">RF</span></li>
-            </ul>
-          </div>
-    </a>
-
+    
+<a href="index.html">
+    <div class="homeContainer">
+        <ul id="homeUl">
+            <li id="homeLogo"><span id="homeSpan">RF</span></li>
+        </ul>
+    </div>
+</a>
 
 <div id = "NavList">
     <div id = "Nav">
@@ -30,9 +29,9 @@
             <li><a href="Portfolio.html" class="items-Nav">Portfolio</a>
                 <ul>
                     <a href="Chronoshift.html" id="dropdown-Nav">Chronoshift</a>
-                    <a href="" id="dropdown-Nav">Flexbox</a>
-                    <a href="" id="dropdown-Nav">Tourism</a>
-                    <a href="" id="dropdown-Nav">Story</a>
+                    <a href="Flexbox.html" id="dropdown-Nav">Flexbox</a>
+                    <a href="Tourism.html" id="dropdown-Nav">Tourism</a>
+                    <a href="Story.html" id="dropdown-Nav">Story</a>
                     <a href="" id="dropdown-Nav">Placeholder</a>
                     <a href="" id="dropdown-Nav">Placeholder</a>
                 </ul>
@@ -43,12 +42,19 @@
     </div>
 </div>
 
+<main>
+<div id="project">
+    <h1 id="proj-Title">Chronoshift Expeditions</h1>
+    <div id="projectDesc">
+        <p> 
+            The first website I ever programmed from start to finish is the <a id = "webLink" href="https://nifty-hodgkin-d16143.netlify.app/">Chronoshift Expeditions</a>  website, a website for a time travel agency looking to give its customers more information about the company and possible destinations. The website contained information about a lot of different topics, such as company history and a brief description of all the different destinations that customers could travel to. <br> <br> Per the requirements, we were instructed to use HTML and CSS only, which was entirely written in Visual Studio code. I wanted to make a website that featured plenty of images for visual aid to the user, and a good amount of text to describe the images and what they mean. There were also strict guidelines about the use of images, as they had to be free-use.  Additionally, the HTML code had to be validated, which meant a lot of editing was in order. <br><br>  When making the website, there were plenty of things that became a challenge, especially when making the web pages look presentable. The wireframe prototype that I created in Figma and the finished product are very similar in design and layout, but there were some revisions made. There were certain aspects of the wireframe that I could not figure out how to program using CSS - so I ended up making changes to accommodate this fact. <br><br> When making the website, I would become very frustrated, admittedly because of CSS. I was greatly enjoying the process, but it was very difficult for me to achieve certain things. When making the site, the use of the 'persist' and 'investigate' CART habits of mind were incredibly helpful. When something wasn't working or even breaking something else, I would investigate as to why, and persist through the difficulties. Unfortunately though, because of my limited experience it would take a long time to figure out what the issue was, but I persisted and finished the project.
+        </p>
+    </div>
+</div> 
 
 
 
-
-
-
+</main>
 <div class="toggleContainer">
 	<button 
     	class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
@@ -56,10 +62,8 @@
 	    <span></span>
 	</button> 
 </div>
-
 </body>
-
-<footer>
+<footer id="proj-Footer">
     <div id="links-Footer">
         <a id="footer-Nav" href="https://www.github.com/CrankyGinger" onclick="linkClicked()" >Github</a>
         <a id="footer-Nav" href="Portfolio.html">Portfolio</a>
@@ -67,12 +71,10 @@
         <a id="footer-Nav" href="Contact.html">Contact</a>
     </div>   
 </footer>
-
 <script>
     var app = document.getElementsByTagName("body")[0];
     if (localStorage.lightMode == "dark") {
         app.setAttribute("light-mode", "dark");
     }
-
 </script>
 </html>

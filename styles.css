@@ -19,9 +19,7 @@ bottom: 20px;
     position: relative;
     border: 1px solid rgba(255,255,255,0);
 }
-    
-    
-    
+      
 .light-mode-button span:nth-child(1) {
     position: absolute;
     top:0;
@@ -53,8 +51,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     box-sizing: border-box;
-    height: 1000vh;
+    height: 100%;
 }
+
+
 
 
 body[light-mode=dark] {
@@ -65,14 +65,14 @@ body[light-mode=dark] {
 
 
 body[light-mode="dark"] .light-mode-button span:nth-child(1){
-    background-color: #ced4e2;
-    color: #141516;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 
 body[light-mode=dark] .light-mode-button span:nth-child(2) {
     left: 5px;
-	background-color: #141516;
+	background-color: #000000;
 }
 
 /* ^ Styling for Light/Dark mode toggle button */
@@ -109,7 +109,7 @@ a{
     transform-origin: bottom left;
 }
   
-  
+
 #NavList{
     text-align:right;
     margin-right:10px;
@@ -239,10 +239,12 @@ display: block;
     /* Styling for the Home button */
 
 footer{
-    position: absolute;
-    bottom: 3%;
+    position: fixed;
+    bottom: 2%;
     margin-left: 40%;
 }
+
+
 
 #footer-Nav{
     text-decoration: none;
@@ -256,7 +258,7 @@ footer{
 
 #introInfo{
     margin-left: 35%;
-    margin-top: 8%;
+    margin-top: 5%;
     position: relative;
     width: fit-content;
 }
@@ -276,5 +278,24 @@ footer{
     font-size: xx-large;
     text-align: center;
     user-select: none;
+}
+
+
+#proj-Title{
+    margin-top: 5%;
+    margin-left: 37%;
+}
+
+#webLink:hover{
+    text-decoration: underline;
+}
+#projectDesc{
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    margin-left: 25%;
+    text-align: justify;
+    font-size: medium;
+    font-weight: 500;
 }
 
