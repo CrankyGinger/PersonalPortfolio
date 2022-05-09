@@ -299,3 +299,13 @@ footer{
     font-weight: 500;
 }
 
+#projectDesc-Story{
+    position: absolute;
+    width: 50%;
+    top: 18%;
+    margin-left: 25%;
+    text-align: justify;
+    font-size: medium;
+    font-weight: 500;
+}
+
