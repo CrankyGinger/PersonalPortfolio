@@ -25,7 +25,12 @@
 <div id = "NavList">
     <div id = "Nav">
         <ul class="dropdown">
-                <a href="About.html" class="items-Nav">About</a>
+                <li><a href="About.html" class="items-Nav">About</a>
+                    <ul>
+                        <a href="Hobbies.html" id="dropdown-Nav">Hobbies</a>
+                        <a href="Awards.html" id="dropdown-Nav">Awards</a>
+                    </ul>
+            </li>    
             <li><a href="Portfolio.html" class="items-Nav">Portfolio</a>
                 <ul>
                     <a href="Chronoshift.html" id="dropdown-Nav">Chronoshift</a>
@@ -37,20 +42,27 @@
                 </ul>
             </li>  
                 <a href="Resume.html" class="items-Nav">Resume</a>
-                <a href="Contact.html" class="items-Nav">Contact</a>
+                <a href="Contact.html" class="items-Nav">Contact </a>
         </ul>
     </div>
 </div>
 
 <main>
-<div id="project">
+<section id="project">
     <h1 id="proj-Title">Chronoshift Expeditions</h1>
-    <div id="projectDesc">
-        <p> 
-            The first website I ever programmed from start to finish is the <a id = "webLink" href="https://nifty-hodgkin-d16143.netlify.app/">Chronoshift Expeditions</a>  website, a website for a time travel agency looking to give its customers more information about the company and possible destinations. The website contained information about a lot of different topics, such as company history and a brief description of all the different destinations that customers could travel to. <br> <br> Per the requirements, we were instructed to use HTML and CSS only, which was entirely written in Visual Studio code. I wanted to make a website that featured plenty of images for visual aid to the user, and a good amount of text to describe the images and what they mean. There were also strict guidelines about the use of images, as they had to be free-use.  Additionally, the HTML code had to be validated, which meant a lot of editing was in order. <br><br>  When making the website, there were plenty of things that became a challenge, especially when making the web pages look presentable. The wireframe prototype that I created in Figma and the finished product are very similar in design and layout, but there were some revisions made. There were certain aspects of the wireframe that I could not figure out how to program using CSS - so I ended up making changes to accommodate this fact. <br><br> When making the website, I would become very frustrated, admittedly because of CSS. I was greatly enjoying the process, but it was very difficult for me to achieve certain things. When making the site, the use of the 'persist' and 'investigate' CART habits of mind were incredibly helpful. When something wasn't working or even breaking something else, I would investigate as to why, and persist through the difficulties. Unfortunately though, because of my limited experience it would take a long time to figure out what the issue was, but I persisted and finished the project.
-        </p>
+        <div id="projectDesc">
+            <p> 
+                The first website I ever programmed from start to finish is the <a id = "webLink" href="https://nifty-hodgkin-d16143.netlify.app/">Chronoshift Expeditions</a>  website, a website for a time travel agency looking to give its customers more information about the company and possible destinations. The website contained information about a lot of different topics, such as company history and a brief description of all the different destinations that customers could travel to. <br> <br> Per the requirements, we were instructed to use HTML and CSS only, which was entirely written in Visual Studio code. I wanted to make a website that featured plenty of images for visual aid to the user, and a good amount of text to describe the images and what they mean. There were also strict guidelines about the use of images, as they had to be free-use.  Additionally, the HTML code had to be validated, which meant a lot of editing was in order. <br><br>  When making the website, there were plenty of things that became a challenge, especially when making the web pages look presentable. The wireframe prototype that I created in Figma and the finished product are very similar in design and layout, but there were some revisions made. There were certain aspects of the wireframe that I could not figure out how to program using CSS - so I ended up making changes to accommodate this fact. <br><br> When making the website, I would become very frustrated, admittedly because of CSS. I was greatly enjoying the process, but it was very difficult for me to achieve certain things. When making the site, the use of the 'persist' and 'investigate' CART habits of mind were incredibly helpful. When something wasn't working or even breaking something else, I would investigate as to why, and persist through the difficulties. Unfortunately though, because of my limited experience it would take a long time to figure out what the issue was, but I persisted and finished the project.
+            </p>
+        </div>
+    <div id="proj-Img">
+        <a href="https://nifty-hodgkin-d16143.netlify.app/">
+            <img src="images/chronoshift.JPG" alt="Chronoshift Site" height="350px" width="650px">
+        </a>
     </div>
-</div> 
+</section> 
+
+
 
 
 
@@ -63,14 +75,16 @@
 	</button> 
 </div>
 </body>
-<footer id="proj-Footer">
+<footer>
     <div id="links-Footer">
         <a id="footer-Nav" href="https://www.github.com/CrankyGinger" onclick="linkClicked()" >Github</a>
         <a id="footer-Nav" href="Portfolio.html">Portfolio</a>
         <a id="footer-Nav" href="Resume.html">Resume</a>
         <a id="footer-Nav" href="Contact.html">Contact</a>
+        <a id="footer-Nav" href="https://www.linkedin.com/in/robertflath/" onclick="linkClicked()">Linkedin</a>
     </div>   
 </footer>
+
 <script>
     var app = document.getElementsByTagName("body")[0];
     if (localStorage.lightMode == "dark") {

@@ -136,7 +136,6 @@ a{
 }
 
 .dropdown li{
-    top: 1%;
     position: relative;
     width: fit-content;
 }
@@ -157,19 +156,20 @@ display: block;
 
 #dropdown-nav{
     display: inline-block;
-    position: relative;
+    position: absolute;
+    top: 0;
 }
 
 #dropdown-Nav:after {
     content: '';
     position: absolute;
-    width: 30%;
+    width: 15%;
     transform: scaleX(0);
     height: 2px;
     right: 1px;
     background-color: #318CE7;
     transform-origin: bottom right;
-    transition: transform 0.4s ease-out;
+    transition: transform 0.2s ease-out;
 }
 
 #dropdown-Nav:hover:after {
@@ -257,7 +257,8 @@ footer{
 
 
 #introInfo{
-    margin-left: 35%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 5%;
     position: relative;
     width: fit-content;
@@ -282,30 +283,58 @@ footer{
 
 
 #proj-Title{
-    margin-top: 5%;
-    margin-left: 37%;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
 }
 
 #webLink:hover{
     text-decoration: underline;
 }
 #projectDesc{
-    position: absolute;
+    position: relative;
     width: 50%;
-    top: 20%;
-    margin-left: 25%;
+    top: 18%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
     text-align: justify;
-    font-size: medium;
+    font-size: 110%;
     font-weight: 500;
 }
 
+#proj-Img {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+img{
+    border-radius: 1% 1% 1% 1%;
+}
+
 #projectDesc-Story{
-    position: absolute;
+    position: relative;
+    margin-top: 2%;
     width: 50%;
     top: 18%;
     margin-left: 25%;
     text-align: justify;
-    font-size: medium;
+    font-size: 110%;
     font-weight: 500;
 }
 
+#resume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+#resume-Header{
+text-align: left;
+position: relative;
+}

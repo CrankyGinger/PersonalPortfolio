@@ -26,7 +26,12 @@
 <div id = "NavList">
     <div id = "Nav">
         <ul class="dropdown">
-                <a href="About.html" class="items-Nav">About</a>
+                <li><a href="About.html" class="items-Nav">About</a>
+                    <ul>
+                        <a href="Hobbies.html" id="dropdown-Nav">Hobbies</a>
+                        <a href="Awards.html" id="dropdown-Nav">Awards</a>
+                    </ul>
+            </li>    
             <li><a href="Portfolio.html" class="items-Nav">Portfolio</a>
                 <ul>
                     <a href="Chronoshift.html" id="dropdown-Nav">Chronoshift</a>
@@ -38,19 +43,24 @@
                 </ul>
             </li>  
                 <a href="Resume.html" class="items-Nav">Resume</a>
-                <a href="Contact.html" class="items-Nav">Contact</a>
+                <a href="Contact.html" class="items-Nav">Contact </a>
         </ul>
     </div>
 </div>
 <main>
-    <div id="project">
+<section id="project">
         <h1 id="proj-Title">Layout With Flexbox</h1>
         <div id="projectDesc">
            <p>
             When making websites with CSS, there are different approaches to the task of arranging the content. But, arguably the best way to approach this challenge is flexbox - a way of laying out different elements on a website. <br><br> Per the assignment, we were required to achieve a certain layout on a webpage by using flexbox only. More specifically, we had to arrange several smaller elements all within a larger element that would act as a container, the way this would be done would be by putting differently sized containers in rows - for example, one row might have one container, whilst the next would have two, and then the next would have three, so on and so forth. <br><br> When arranging the content, there were a fair share of challenges, as it was my first time ever using flexbox. Flexbox offers users a lot of different ways to arrange content, depending on what you’re going for on your site. One of the biggest challenges was figuring out which property to use, as using the wrong one would make it a nightmare to achieve the goal. <br><br> When I was facing a struggle with making elements fit within what was essentially a row, I would employ some of CART’s habits of mind - communicate, persist. When I was aiming to arrange elements within a row, it wouldn’t come to me very easily, so I would communicate with my classmates, and ask them questions. After talking to my comrades about the issue at hand, I would persist through the struggle and just keep on trying different methods. Eventually, I completed the assignment and felt great satisfaction after my persistence through the challenge of learning more about CSS.  
            </p>
         </div>
-    </div> 
+        <div id="proj-Img">
+            <a href="">
+                <img src="images/flexboxLayout.JPG" alt="Flexbox" height="350px" width="650px">
+            </a>
+        </div>
+</section> 
 
 
 
@@ -72,6 +82,7 @@
         <a id="footer-Nav" href="Portfolio.html">Portfolio</a>
         <a id="footer-Nav" href="Resume.html">Resume</a>
         <a id="footer-Nav" href="Contact.html">Contact</a>
+        <a id="footer-Nav" href="https://www.linkedin.com/in/robertflath/" onclick="linkClicked()">Linkedin</a>
     </div>   
 </footer>
 

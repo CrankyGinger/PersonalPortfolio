@@ -25,7 +25,12 @@
 <div id = "NavList">
     <div id = "Nav">
         <ul class="dropdown">
-                <a href="About.html" class="items-Nav">About</a>
+                <li><a href="About.html" class="items-Nav">About</a>
+                    <ul>
+                        <a href="Hobbies.html" id="dropdown-Nav">Hobbies</a>
+                        <a href="Awards.html" id="dropdown-Nav">Awards</a>
+                    </ul>
+            </li>    
             <li><a href="Portfolio.html" class="items-Nav">Portfolio</a>
                 <ul>
                     <a href="Chronoshift.html" id="dropdown-Nav">Chronoshift</a>
@@ -37,23 +42,24 @@
                 </ul>
             </li>  
                 <a href="Resume.html" class="items-Nav">Resume</a>
-                <a href="Contact.html" class="items-Nav">Contact</a>
+                <a href="Contact.html" class="items-Nav">Contact </a>
         </ul>
     </div>
 </div>
 <main>
-    <div id="project">
+<section id="project">
         <h1 id="proj-Title">Interactive Story Game</h1>
-        <div id="projectDesc-Story">
+    <div id="projectDesc-Story">
            <p>
             Towards the end of my time at CART, I and another classmate worked to construct a web game. The game we made is an interactive story, called <a id= "webLink" href="https://jacksexpedition.netlify.app/">Jack's Expedition</a> in which you follow the journey of a character through the world. <br><br> This is the assignment where we really put JavaScript to use, being the only reason the game works.This site was constructed by combining my knowledge of the three essential languages for web design - HTML, CSS, and JavaScript. According to the assignment requirements, the story featured in the game would really have to be interactive. That is to say that the story needed to have plenty of different ways in which it could go. <br><br> Just like all other websites I've constructed, there were more than a few challenges with making this project. Perhaps the longest running challenge was the story. One of our requirements was to implement '12 steps of the hero's journey' into each of the different story branches. This required a lot of creativity, something that doesn't come easily to me. Oftentimes, I found myself looking at the stories in novels, games, shows, etc. in order to get an idea of how writers approach the challenge of making a story. Alongside the story, there was also the challenge of making the game actually work, this of course was done with the help of JavaScript. With Javascript, we basically made everything a user sees when actively playing the game, all of the text and the buttons were generated with JavaScript. <br><br> In this long project, I admittedly got a little frustrated at a few different things. Particularly the story writing process. Truthfully, I enjoyed writing the story, but it was also really difficult to think of ways to bridge a lot of different events and dialogue together in a way that seemed somewhat natural. Alongside the story, there were things in Javascript that for some reason didn't seem to work. What's even more frustrating is that the fix to these site-breaking problems is rather simple. But, throughout this process, I persisted and communicated with my partner. Without my persistence, there is no way that I could have possibly done this. 
            </p>
+    </div>
+        <div id="proj-Img">
+            <a href="https://jacksexpedition.netlify.app/">
+                <img src="images/story.JPG" alt="Story Game" height="350px" width="650px">
+            </a>
         </div>
-    </div> 
-
-
-
-
+</section>
 </main>
 
 
@@ -77,6 +83,7 @@
         <a id="footer-Nav" href="Portfolio.html">Portfolio</a>
         <a id="footer-Nav" href="Resume.html">Resume</a>
         <a id="footer-Nav" href="Contact.html">Contact</a>
+        <a id="footer-Nav" href="https://www.linkedin.com/in/robertflath/" onclick="linkClicked()">Linkedin</a>
     </div>   
 </footer>
 
