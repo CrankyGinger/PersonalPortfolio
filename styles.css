@@ -324,17 +324,63 @@ img{
     font-size: 110%;
     font-weight: 500;
 }
-
+#proj-footer{
+position: relative;
+display: flex;
+align-items: center;
+margin-bottom: 1%;
+margin-top: 2%;
+width: fit-content;
+}
 #resume{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
 }
 
 #resume-Header{
-text-align: left;
-position: relative;
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-size: x-large;
 }
+
+
+#skills{
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 0;
+}
+
+#skills-Header{
+    font-size: large;
+}
+
+#resume-Item{
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    justify-content: left;
+    width: fit-content;
+    font: 110%;
+}
+
+#resume-Items{
+    margin-right: 5px;
+}
+
+#resume-footer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    width: fit-content;
+}
+

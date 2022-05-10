@@ -1,5 +1,4 @@
-
- function toggle_light_mode() {
+function toggle_light_mode() {
     var app = document.getElementsByTagName("body")[0];
     if (localStorage.lightMode == "dark") {
         localStorage.lightMode = "light";
@@ -10,9 +9,6 @@
     } 
     
 }
-
-
-
 
 window.addEventListener("storage", function () {
     if (localStorage.lightMode == "dark") {
