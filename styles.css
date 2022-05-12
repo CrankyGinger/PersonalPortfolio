@@ -315,6 +315,10 @@ img{
     border-radius: 1% 1% 1% 1%;
 }
 
+#aboutimg{
+    border-radius: inherit;
+}
+
 #projectDesc-Story{
     position: relative;
     margin-top: 2%;
@@ -402,9 +406,10 @@ width: fit-content;
 }
 
 #about-Me-Text{
-    width: 25%;
-    font-size: 95%;
+    max-width: 28%;
+    font-size: 120%;
     padding-right: 15%;
+    
 }
 
 #selfie{
@@ -455,23 +460,17 @@ font-size: xx-large;
     margin-top: 3%;
 }
 
-#section-one img{
-    margin-left: 10%;
-}
 
-#section-two img{
-    margin-right: 10%;
-}
 
 #hobbyTextOne{
-    width: 25%;
-    font-size: 150%;
+    width: 30%;
+    font-size: 160%;
     text-align: left;
+    position: relative;
 }
 
 #hobbyTextTwo{
-    width: 25%;
-    font-size: 150%;
-    padding-left: 5%;
+    width: 30%;
+    font-size: 160%;
     text-align: left;
 }
