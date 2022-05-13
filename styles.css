@@ -282,6 +282,11 @@ footer{
     user-select: none;
 }
 
+#stickRoll{
+color: transparent;
+}
+
+
 
 #proj-Title{
     display: flex;
@@ -406,8 +411,8 @@ width: fit-content;
 }
 
 #about-Me-Text{
-    max-width: 28%;
-    font-size: 120%;
+    max-width: 30%;
+    font-size: 100%;
     padding-right: 15%;
     
 }
