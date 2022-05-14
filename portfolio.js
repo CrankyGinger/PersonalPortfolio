@@ -19,3 +19,4 @@ window.addEventListener("storage", function () {
 function linkClicked(){
     alert("You are leaving this site");
 }
+
