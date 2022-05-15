@@ -555,3 +555,67 @@ color: #4267B2;
 	display: block;
     user-select: none;
 }
+
+@media screen and (max-height: 1920px){
+    .burger-nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #introText{
+        font-size: 35px;
+        margin-top: 15%;
+    }
+    #quickInfo{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    
+    #homeText{
+        font-size: 30px;
+        text-align: center;
+        user-select: none;
+    }
+
+    .burger-nav{
+        display: block;
+        height: 40px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    #Nav ul{
+        overflow: hidden;
+        height: 0;
+        margin-top: 5%;
+    }
+
+    #Nav ul.open{
+        height: auto;
+    }
+
+    #Nav ul {
+        float: none;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        margin-top: 2%;
+    }
+
+    #Nav ul ul {
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+
+    #Nav ul li a{
+        color: yellow;
+        padding:10px;
+        border-bottom: 1px solid;
+        display: block;
+        margin: 0;
+    }
+}

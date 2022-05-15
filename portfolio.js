@@ -20,3 +20,8 @@ function linkClicked(){
     alert("You are leaving this site");
 }
 
+$(document).ready(function(){
+$(".burger-nav").on("click", function(){
+    $("#Nav ul").toggleClass("open");
+});
+});
