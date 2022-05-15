@@ -365,7 +365,7 @@ width: fit-content;
     font-size: 270%;
 }
 
-#resume-Header{
+.resume-Header{
     position: relative;
     display: flex;
     align-content: center;
@@ -375,7 +375,7 @@ width: fit-content;
 }
 
 
-#skills{
+.skills{
     position: relative;
     display: flex;
     align-content: center;
@@ -384,11 +384,11 @@ width: fit-content;
     margin-left: 0;
 }
 
-#skills-Header{
+.skills-Header{
     font-size: large;
 }
 
-#resume-Item{
+.resume-Item{
     list-style-type: none;
     position: relative;
     display: flex;
@@ -397,17 +397,8 @@ width: fit-content;
     font: 110%;
 }
 
-#resume-Items{
+.resume-Items{
     margin-right: 5px;
-}
-
-#resume-footer{
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-bottom: 1%;
-    margin-top: 2%;
-    width: fit-content;
 }
 
 #about-Me{
@@ -496,19 +487,51 @@ font-size: xx-large;
     margin-top: 5%;
     position: relative;
     width: fit-content;
+    font-size: 200%;
 }
 
-#fastCont{
+
+#fastCont p{
+    justify-content: space-between;
     position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    margin-bottom: 55px;
-    margin-top: 3%;
+    text-align: center;
 }
 
 #socials{
     text-align: center;
-    font-size: 500%;
+}
+
+#socials a{
+    justify-content: space-between;
+    font-size: 650%;
+    position: relative;
+    margin-left: 10px;
+}
+
+#socialHead{
+    font-size: 300%;
+}
+
+#facebookLink:hover{
+cursor: pointer;
+color: #4267B2;
+}
+
+#linkedinLink:hover{
+    cursor: pointer;
+    color: #0072b1;
+}
+
+#thanks{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    position: relative;
+    width: fit-content;
+    width: 50%;
+}
+
+#thanks p{
+    text-align: center;
+    font-size: x-large
 }

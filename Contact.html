@@ -28,34 +28,39 @@
         <ul class="dropdown">
                 <li><a href="About.html" class="items-Nav">About</a>
                     <ul>
-                        <a href="Hobbies.html" id="dropdown-Nav">Hobbies</a>
-                        <a href="Awards.html" id="dropdown-Nav">Awards</a>
+                        <li><a href="Hobbies.html" class="dropdown-Nav">Hobbies</a></li>
+                        <li><a href="Awards.html" class="dropdown-Nav">Awards</a></li>
                     </ul>
             </li>    
             <li><a href="Portfolio.html" class="items-Nav">Portfolio</a>
                 <ul>
-                    <a href="Chronoshift.html" id="dropdown-Nav">Chronoshift</a>
-                    <a href="Flexbox.html" id="dropdown-Nav">Flexbox</a>
-                    <a href="Tourism.html" id="dropdown-Nav">Tourism</a>
-                    <a href="interactiveStory.html" id="dropdown-Nav">Story</a>
-                    <a href="" id="dropdown-Nav">Placeholder</a>
-                    <a href="" id="dropdown-Nav">Placeholder</a>
+                    <li><a href="Chronoshift.html" class="dropdown-Nav">Chronoshift</a></li>
+                    <li><a href="Flexbox.html" class="dropdown-Nav">Flexbox</a></li>
+                    <li><a href="Tourism.html" class="dropdown-Nav">Tourism</a></li>
+                    <li><a href="interactiveStory.html" class="dropdown-Nav">Story</a></li>
+                    <li><a href="" class="dropdown-Nav">Placeholder</a></li>
+                    <li><a href="" class="dropdown-Nav">Placeholder</a></li>
                 </ul>
             </li>  
-                <a href="Resume.html" class="items-Nav">Resume</a>
-                <a href="Contact.html" class="items-Nav">Contact </a>
+                <li><a href="Resume.html" class="items-Nav">Resume</a></li>
+                <li><a href="Contact.html" class="items-Nav">Contact </a></li>
         </ul>
     </div>
 </div>
 <main>
+    <div id="thanks">
+        <p>I'd like to thank you for reading through my portfolio website. Here you can find how to contact me If you have any questions, would like to discuss something, or would just like to talk.</p>
+    </div>
     <section>
-        <h2 id="contHead">Ways you can contact me</h2>
+        <h2 id="contHead">Fastest ways to reach me</h2>
         <div id="fastCont">
-        <p>Email:robertflath396@gmail.com</p>
-        <p>Phone Number:(559)917-3808</p>
+            <p>Email: robertflath396@gmail.com</p>
+            <p>Phone Number: (559)917-3808</p>
         </div>
         <div id="socials">
-            <a id="webLink" href="https://www.linkedin.com/in/robertflath/" onclick="linkClicked()"><i class="fa-brands fa-linkedin"></i></a>
+            <h2 id="socialHead">Social Media</h2>
+            <a id="linkedinLink" href="https://www.linkedin.com/in/robertflath/" onclick="linkClicked()"><i class="fa-brands fa-linkedin"></i></a>
+            <a id="facebookLink" href="https://fontawesome.com/icons/facebook?s=brands" onclick="linkClicked()"><i class="fa-brands fa-facebook-square"></i></a>
         </div>
     </section>
 </main>
@@ -67,26 +72,20 @@
 	    <span></span>
 	</button> 
 </div>
-
-<script src="https://smtpjs.com/v3/smtp.js"></script>
 <footer>
     <div id="links-Footer">
-        <a id="footer-Nav" href="https://www.github.com/CrankyGinger" onclick="linkClicked()" >Github</a>
-        <a id="footer-Nav" href="Portfolio.html">Portfolio</a>
-        <a id="footer-Nav" href="Resume.html">Resume</a>
-        <a id="footer-Nav" href="Contact.html">Contact</a>
-        <a id="footer-Nav" href="https://www.linkedin.com/in/robertflath/" onclick="linkClicked()">Linkedin</a>
+        <a class="footer-Nav" href="https://www.github.com/CrankyGinger" onclick="linkClicked()" >Github</a>
+        <a class="footer-Nav" href="Portfolio.html">Portfolio</a>
+        <a class="footer-Nav" href="Resume.html">Resume</a>
+        <a class="footer-Nav" href="Contact.html">Contact</a>
+        <a class="footer-Nav" href="https://www.linkedin.com/in/robertflath/" onclick="linkClicked()">Linkedin</a>
     </div>   
 </footer>
-</body>
-
-
-
 <script>
     var app = document.getElementsByTagName("body")[0];
     if (localStorage.lightMode == "dark") {
         app.setAttribute("light-mode", "dark");
     }
-
 </script>
+</body>
 </html>
