@@ -580,42 +580,5 @@ color: #4267B2;
         user-select: none;
     }
 
-    .burger-nav{
-        display: block;
-        height: 40px;
-        width: 100%;
-        cursor: pointer;
-    }
 
-    #Nav ul{
-        overflow: hidden;
-        height: 0;
-        margin-top: 5%;
-    }
-
-    #Nav ul.open{
-        height: auto;
-    }
-
-    #Nav ul {
-        float: none;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        margin-top: 2%;
-    }
-
-    #Nav ul ul {
-        text-align: left;
-        width: 100%;
-        margin: 0;
-    }
-
-    #Nav ul li a{
-        color: yellow;
-        padding:10px;
-        border-bottom: 1px solid;
-        display: block;
-        margin: 0;
-    }
 }
