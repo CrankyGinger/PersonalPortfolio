@@ -38,8 +38,8 @@
                     <li><a href="Flexbox.html" class="dropdown-Nav">Flexbox</a></li>
                     <li><a href="Tourism.html" class="dropdown-Nav">Tourism</a></li>
                     <li><a href="interactiveStory.html" class="dropdown-Nav">Story</a></li>
-                    <li><a href="" class="dropdown-Nav">Placeholder</a></li>
-                    <li><a href="" class="dropdown-Nav">Placeholder</a></li>
+                    <li><a href="discoverText.html" class="dropdown-Nav">Discover</a></li>
+                    <li><a href="visitText.html" class="dropdown-Nav">Visit</a></li>
                 </ul>
             </li>  
                 <li><a href="Resume.html" class="items-Nav">Resume</a></li>
@@ -47,7 +47,55 @@
         </ul>
     </div>
 </div>
+<main>
+    <h1 id="portHead">Here you can see some of the projects that I have worked on.</h1>
+	<div id="slideshow-example" data-component="slideshow">
+		<div role="list">
+			<div class="slide">
+				<a href="Chronoshift.html"><img src="images/chronoshift.JPG" alt="" width="600" height="400"></a>
+			</div>
+			<div class="slide">
+				<a href="Flexbox.html"><img src="images/flexboxLayout.JPG" alt="" width="600" height="400"></a>
+			</div>
+			<div class="slide">
+				<a href="Tourism.html"><img src="images/toursim.JPG" alt="" width="600" height="400"></a>
+			</div>
+            <div class="slide">
+				<a href="interactiveStory.html"><img src="images/story.JPG" alt="" width="600" height="400"></a>
+			</div>
+            <div class="slide">
+				<a href="discoverText.html"><img src="images/discoverText.JPG" alt="" width="600" height="400"></a>
+			</div>
+            <div class="slide">
+				<a href="visitText.html"><img src="images/visitText.JPG" alt="" width="600" height="400"></a>
+			</div>
+		</div>
+	</div>
 
+    <script>
+        var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+slideshows.forEach(initSlideShow);
+
+function initSlideShow(slideshow) {
+
+	var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
+
+	var index = 0, time = 3000;
+	slides[index].classList.add('active');
+
+	setInterval( () => {
+		slides[index].classList.remove('active');
+		
+		index++;
+		if (index === slides.length) index = 0;
+
+		slides[index].classList.add('active');
+
+	}, time);
+}
+    </script>
+
+</main>
 
 
 
