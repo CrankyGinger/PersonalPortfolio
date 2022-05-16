@@ -565,13 +565,12 @@ color: #4267B2;
 @media screen and (max-width: 1024px)  {
 
     #introInfo{
-        margin-top: 12%;
+        margin-top: 13%;
     }
     
     #introText{
-        font-size: 290%;
-        width: 100%;
-        text-align: center;
+        font-size: 200%;
+        
     }
 
 
@@ -582,20 +581,150 @@ color: #4267B2;
         position: relative;
     }
     
+    #proj-Title{
+        margin-top: 17vh;
+    }
+
     #homeText{
-        font-size: 170%;
+        font-size: 150%;
         text-align: center;
         user-select: none;
     }
 
-    footer{
+    #about-Me{
+        margin-top: 5%;
+    }
+
+    #selfie{
+        max-width: 90px;
+        max-width: 90px;
+        margin-right: 10%;
+    }
+
+    #about-Me-Text{
+        font-size: 90%;
+        max-width: 70%;
+        padding-left: 5%;
+    }
+
+    #fourYP img{
+        max-width: 400px;
+        max-height: 250px;
+    }
+
+    #text-fyp{
+        font-size: 90%;
+        max-width: 55%;
+    }
+
+    #text-divider{
+        font-size: 195%;
+    }
+
+    #section-one img{
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    #section-one p{
+        max-width: 50%;
+        font-size: 105%;
+    }
+
+    #section-two img{
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    #section-two p{
+        max-width: 50%;
+        font-size: 105%;
+    }
+
+    #projectDesc{
         font-size: 100%;
+        max-width: 50%;
+        text-align: center;
+    }
+
+    #projectDesc-Story{
+        font-size: 100%;
+        max-width: 50%;
+        text-align: center;
+    }
+
+    #project img{
+        max-width: 400px;
+        max-height: 400px;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10px;
+    }
+
+    footer{
+        font-size: 90%;
         position: fixed;
         bottom: 2%;
-        margin-left: 30%;
+        margin-left: 35%;
+    }
+
+    #portHead{
+        font-size: 190%;
+        margin-top: 18vh;
+        width: 70%;
+    }
+
+    .slide img{
+        max-width: 600px;
+        max-height: 600px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #resume-Title{
+        font-size: 250%;
+        margin-top: 23vh;
+    }
+
+    .resume-Header{
+        font-size: 150%;
+    }
+
+    .resume-Item{
+        font-size: 100%;
+    }
+
+    .skills-Header{
+        font-size: 150%;
+        margin-left: 25px;
+    }
+
+    #thanks p{
+        margin-top: 18vh;
+        font-size: 160%;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #contHead{
+        font-size: 160%;
+    }
+
+    #socialHead{
+        font-size: 160%;
+    }
+
+    #socials a{
+        font-size: 570%;
+        margin-bottom: 10px;
     }
 
 }
+
+ /* ^ Tablet media queries */
+
 @media screen and (max-width: 480px) {
     
     #introInfo{
