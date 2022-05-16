@@ -562,23 +562,197 @@ color: #4267B2;
     }
 }
 
-@media screen and (max-width: 480px) {
-    #introText{
-        font-size: 35px;
-        margin-top: 15%;
+@media screen and (max-width: 1024px)  {
+
+    #introInfo{
+        margin-top: 12%;
     }
+    
+    #introText{
+        font-size: 290%;
+        width: 100%;
+        text-align: center;
+    }
+
+
     #quickInfo{
-        width: 70%;
+        width: 60%;
         margin-left: auto;
         margin-right: auto;
         position: relative;
     }
     
     #homeText{
-        font-size: 30px;
+        font-size: 170%;
         text-align: center;
         user-select: none;
     }
 
+    footer{
+        font-size: 100%;
+        position: fixed;
+        bottom: 2%;
+        margin-left: 30%;
+    }
 
 }
+@media screen and (max-width: 480px) {
+    
+    #introInfo{
+        margin-top: 40%;
+    }
+    
+    #introText{
+        font-size: 100%;
+        
+    }
+
+
+    #quickInfo{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+    
+    #proj-Title{
+        margin-top: 25vh;
+    }
+
+    #homeText{
+        font-size: 90%;
+        text-align: center;
+        user-select: none;
+    }
+
+    #about-Me{
+        margin-top: 18%;
+    }
+
+    #selfie{
+        max-width: 70px;
+        max-width: 80px;
+        margin-right: 10%;
+    }
+
+    #about-Me-Text{
+        font-size: 60%;
+        max-width: 70%;
+        padding-left: 5%;
+    }
+
+    #fourYP img{
+        max-width: 200px;
+        max-height: 150px;
+    }
+
+    #text-fyp{
+        font-size: 80%;
+        max-width: 55%;
+    }
+
+    #text-divider{
+        font-size: 175%;
+    }
+
+    #section-one img{
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    #section-one p{
+        max-width: 40%;
+        font-size: 65%;
+    }
+
+    #section-two img{
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    #section-two p{
+        max-width: 40%;
+        font-size: 65%;
+    }
+
+    #projectDesc{
+        font-size: 80%;
+        max-width: 50%;
+        text-align: center;
+    }
+
+    #projectDesc-Story{
+        font-size: 80%;
+        max-width: 50%;
+        text-align: center;
+    }
+
+    #project img{
+        max-width: 300px;
+        max-height: 300px;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10px;
+    }
+
+    footer{
+        font-size: 70%;
+        position: fixed;
+        bottom: 2%;
+        margin-left: 25%;
+    }
+
+    #portHead{
+        font-size: 20px;
+        margin-top: 25vh;
+        min-width: 100%;
+    }
+
+    .slide img{
+        max-width: 300px;
+        max-height: 300px;
+        margin-top: 10px;
+    }
+
+    #resume-Title{
+        font-size: 210%;
+        margin-top: 23vh;
+    }
+
+    .resume-Header{
+        font-size: 90%;
+    }
+
+    .resume-Item{
+        font-size: 80%;
+    }
+
+    .skills-Header{
+        font-size: 80%;
+        margin-left: 25px;
+    }
+
+    #thanks p{
+        margin-top: 25vh;
+        font-size: 140%;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #contHead{
+        font-size: 120%;
+    }
+
+    #socialHead{
+        font-size: 120%;
+    }
+
+    #socials a{
+        font-size: 370%;
+        margin-bottom: 10px;
+    }
+}
+
+ 
