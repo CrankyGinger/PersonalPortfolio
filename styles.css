@@ -388,6 +388,11 @@ width: fit-content;
     font-size: large;
 }
 
+.skills-Header1{
+    font-size: large;
+    margin-left: 25px;
+}
+
 .resume-Item{
     list-style-type: none;
     position: relative;
@@ -695,10 +700,6 @@ color: #4267B2;
         font-size: 100%;
     }
 
-    .skills-Header{
-        font-size: 150%;
-        margin-left: 25px;
-    }
 
     #thanks p{
         margin-top: 18vh;
