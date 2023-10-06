@@ -123,7 +123,7 @@ a{
 #Nav{
     display: inline-flex;
     flex-wrap: wrap;
-    margin-right:30px;
+    margin-right:50px;
 }
 
 
@@ -143,18 +143,18 @@ a{
 
 .dropdown ul {
     display: none;
-    position: absolute;
-    top: 100%;
+    position: relative;
+    top: 0%;
     list-style-type: none;
-    right: 0;
+    right: 35%;
 }
 
 .dropdown ul li{
-    position: relative;
+    position:relative;
     top: 100%;
     list-style-type: none;
     left: 0;
-    text-align: right;
+    text-align: left;
 }
 
 
@@ -330,9 +330,7 @@ img{
     border-radius: 1% 1% 1% 1%;
 }
 
-#aboutimg{
-    border-radius: inherit;
-}
+
 
 #projectDesc-Story{
     position: relative;
@@ -352,81 +350,9 @@ margin-bottom: 1%;
 margin-top: 2%;
 width: fit-content;
 }
-#resume{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#resume-Title{
-    display: flex;
-    justify-content: center;
-    font-size: 270%;
-}
-
-.resume-Header{
-    position: relative;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin-bottom: 5px;
-    font-size: x-large;
-}
 
 
-.skills{
-    position: relative;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-direction: row;
-    margin-left: 0;
-}
 
-.skills-Header{
-    font-size: large;
-}
-
-.skills-Header1{
-    font-size: large;
-    margin-left: 25x;
-}
-
-.resume-Item{
-    list-style-type: none;
-    position: relative;
-    display: flex;
-    justify-content: left;
-    width: fit-content;
-    font: 110%;
-}
-
-.resume-Items{
-    margin-right: 5px;
-}
-
-#about-Me{
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 7%;
-    margin-bottom: 55px;
-}
-
-#about-Me-Text{
-    max-width: 30%;
-    font-size: 100%;
-    padding-right: 15%;
-    
-}
-
-#selfie{
-    border-radius: 50%;
-    margin-left: 15%;
-}
 
 
 #text-divider{
@@ -473,18 +399,7 @@ font-size: xx-large;
 
 
 
-#hobbyTextOne{
-    width: 30%;
-    font-size: 160%;
-    text-align: left;
-    position: relative;
-}
 
-#hobbyTextTwo{
-    width: 30%;
-    font-size: 160%;
-    text-align: left;
-}
 
 #contHead{
     margin-left: auto;
@@ -551,15 +466,7 @@ color: #4267B2;
     text-align: center;
 }
 
-[data-component="slideshow"] .slide {
-	display: none;
-  text-align: center;
-}
 
-[data-component="slideshow"] .slide.active {
-	display: block;
-    user-select: none;
-}
 
 @media screen and (max-height: 1920px){
     .burger-nav{
@@ -596,21 +503,7 @@ color: #4267B2;
         user-select: none;
     }
 
-    #about-Me{
-        margin-top: 5%;
-    }
 
-    #selfie{
-        max-width: 90px;
-        max-width: 90px;
-        margin-right: 10%;
-    }
-
-    #about-Me-Text{
-        font-size: 90%;
-        max-width: 70%;
-        padding-left: 5%;
-    }
 
     #fourYP img{
         max-width: 400px;
@@ -755,9 +648,7 @@ color: #4267B2;
         user-select: none;
     }
 
-    #about-Me{
-        margin-top: 18%;
-    }
+
 
     #selfie{
         max-width: 70px;
@@ -765,16 +656,8 @@ color: #4267B2;
         margin-right: 10%;
     }
 
-    #about-Me-Text{
-        font-size: 60%;
-        max-width: 70%;
-        padding-left: 5%;
-    }
 
-    #fourYP img{
-        max-width: 200px;
-        max-height: 150px;
-    }
+
 
     #text-fyp{
         font-size: 80%;
